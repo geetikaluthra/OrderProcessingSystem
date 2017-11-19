@@ -1,10 +1,19 @@
 package com.abc.model;
 
+import java.util.TreeSet;
+
 public class Customer {
 	private String name;
 	private int id;
 	private String Address;
 	private long phone;
+	private static int cid=1;
+	
+	public Customer() {
+		// TODO Auto-generated constructor stub
+		this.id = cid;
+		cid++;
+	}
 	
 	public String getName() {
 		return name;
@@ -14,9 +23,6 @@ public class Customer {
 	}
 	public int getId() {
 		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getAddress() {
 		return Address;
@@ -31,20 +37,12 @@ public class Customer {
 		this.phone = phone;
 	}
 	
-	public void addNewProduct(Product p){
-		
-	}
-	
-	public void deleteExistingProduct(){
-		
-	}
-	
 	public void editAddress(String address){
-		
+		setAddress(address);
 	}
 	
 	public void editPhone(long phoneNo){
-		
+		setPhone(phoneNo);
 	}
 	
 }
