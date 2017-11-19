@@ -1,4 +1,4 @@
-package com.aricent.model;
+package com.abc.model;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.aricent.dao;
+package com.abc.dao;
 
 public class ProductList {
 
